@@ -1,8 +1,8 @@
 apache2:
    pkg:
     - installed
-   service:
-    - running
+#   service:
+#    - running
    watch:
     - file: /etc/apache2/*
 
@@ -24,3 +24,8 @@ python3-flask:
 /etc/skel/:
    file.recurse:
     - source: salt://flask/skel/
+
+restart apache:
+   service.running:
+    - restart: True
+    - name: apache2
