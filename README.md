@@ -8,7 +8,8 @@ New users are able to modify templates and their homepage at localhost/~USERNAME
 # How to use
 
 - First of all you need atleast Salt-master (preferably also Salt-minion)
-- Assign Salt-masters ip in the Salt-minion [(Instructions)](https://tuomaslintula.wordpress.com/2021/11/04/tehtava-h2-2/)
+- Connect Salt.minion to Salt-master [(Instructions)](https://tuomaslintula.wordpress.com/2021/11/04/tehtava-h2-2/)
+- Git clone this repository to `/srv/salt/`
 - Use command to run Saltstate
 
 	## From master to minion
