@@ -11,17 +11,18 @@ New users are able to modify templates and their homepage at localhost/~USERNAME
 - Assign Salt-masters ip in the Salt-minion [(Instructions)](https://tuomaslintula.wordpress.com/2021/11/04/tehtava-h2-2/)
 - Use command to run Saltstate
 
-	# From master to minion
-	sudo salt '*' state.apply saltflask
+	## From master to minion
+		sudo salt '*' state.apply saltflask
 	
-	# On master only
-	sudo salt-call --local state.apply saltflask
+	## On master only
+		sudo salt-call --local state.apply saltflask
 
 - That's it!
 
 # Features
 
-- Makes public_html, python folders in new users home directory
+- Makes public_html and python folders in new users home directory automatically
+- Replaces Apaches default page
 - Edit/run Flask templates
 
 	python3 python/testTemplate.py
