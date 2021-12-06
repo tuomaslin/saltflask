@@ -22,9 +22,10 @@ New users are able to modify templates and their homepage at localhost/~USERNAME
 
 # Features
 
-- Makes public_html and python folders in new users home directory automatically
-- Replaces Apaches default page
-- Edit/run Flask templates
+- SaltState is idenpotent
+- It creates public_html and python folders in new users home directory automatically
+- It replaces Apaches default page
+- New users can edit/run Flask templates
 
 	python3 python/testTemplate.py
 

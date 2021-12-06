@@ -1,10 +1,6 @@
 apache2:
    pkg:
     - installed
-#   service:
-#    - running
-   watch:
-    - file: /etc/apache2/*
 
 python3-flask:
    pkg.installed
@@ -29,3 +25,6 @@ restart apache:
    service.running:
     - restart: True
     - name: apache2
+   watch:
+    - file: /etc/apache2/*
+
