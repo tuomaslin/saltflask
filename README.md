@@ -34,3 +34,6 @@ New users are able to modify templates and their homepage at localhost/~USERNAME
 
 ![Image](/screenshots/publichtml.png)
 
+# Credits
+
+Huge thanks to [Tero Karvinen](https://terokarvinen.com/) for this course! It was named Palvelinten hallinta - ICT4TN022-3014
