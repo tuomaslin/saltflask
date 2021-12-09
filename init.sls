@@ -1,6 +1,5 @@
 apache2:
-   pkg:
-    - installed
+   pkg.installed
 
 python3-flask:
    pkg.installed
@@ -21,10 +20,11 @@ python3-flask:
    file.recurse:
     - source: salt://flask/skel/
 
-restart apache:
+apache2.service:
    service.running:
-    - restart: True
-    - name: apache2
+    - enable: True
    watch:
-    - file: /etc/apache2/*
+    - file: /etc/apache2/mods-enabled/userdir.conf
+    - file: /etc/apache2/mods-enabled/userdir.load
+
 
