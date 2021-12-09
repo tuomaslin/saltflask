@@ -1,6 +1,6 @@
 # SaltState to install and configure Apache2 and Flask in test enviroment.
 
-This SaltState is for students who want to try Flask for the first time (__DO NOT USE IN PRODUCTION__).
+This SaltState is for people who want to try Flask for the first time (__DO NOT USE IN PRODUCTION__).
 
 New users are able to modify test templates and their homepage at localhost/~USERNAME/. Flask is a program
 that use to show applications in web format.
