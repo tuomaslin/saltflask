@@ -1,6 +1,7 @@
-# SaltState to install and configure Apache2 and flask.
+# SaltState to install and configure Apache2 and Flask in test enviroment.
 
-New users are able to modify templates and their homepage at localhost/~USERNAME/
+New users are able to modify test templates and their homepage at localhost/~USERNAME/. Flask is a program
+that use to show applications in web format.
 
 ![Image](/screenshots/result.png)
 ![Image](/screenshots/curllocalhost.png)
@@ -22,12 +23,13 @@ New users are able to modify templates and their homepage at localhost/~USERNAME
 
 # Features
 
+- __NOT TO BE USED IN PRODUCTION!__
 - SaltState is idenpotent
 - It creates public_html and python folders in new users home directory automatically
 - It replaces Apaches default page
 - New users can edit/run Flask templates
 
-	python3 python/testTemplate.py
+	`python3 python/testTemplate.py`
 
 ![Image](/screenshots/flasktemplate.png)
 
